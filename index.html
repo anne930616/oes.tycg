@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能客服測試</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 智能客服 -->
+    <div class="chatbot-widget">
+        <div class="chatbot-button" id="chatbotButton">
+            <div class="chatbot-icon">
+                <img src="photo/有頭鹿.png" alt="有頭鹿" class="deer-icon">
+            </div>
+            <div class="chatbot-text">
+                <span>有問題找有頭鹿</span>
+            </div>
+        </div>
+        
+        <!-- 聊天視窗 -->
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-title">
+                    <img src="photo/有頭鹿.png" alt="有頭鹿" class="deer-icon-small">
+                    <span>智能客服 - 有頭鹿</span>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>您好！我是桃園市政府就業職訓服務處的有頭鹿，很高興為您服務！</p>
+                        <p>請選擇您的身份，我可以為您提供相關服務：</p>
+                        <div class="option-buttons">
+                            <button class="option-btn" data-option="勞工">👷 勞工</button>
+                            <button class="option-btn" data-option="雇主">💼 雇主</button>
+                            <button class="option-btn" data-option="外國人/新住民">🌍 外國人/新住民</button>
+                        </div>
+                        <p>如果不知道該選哪一個，也可以直接把您的問題告訴我唷！有頭鹿都會盡力為您解答～🦌✨</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="請輸入您的問題..." maxlength="200">
+                <button id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
